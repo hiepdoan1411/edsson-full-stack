@@ -1,0 +1,15 @@
+{
+  "name": "edsson",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {},
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "ts-node": "^10.4.0"
+  }
+}

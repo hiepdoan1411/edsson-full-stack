@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2019",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "noUnusedParameters": false,
+    "noUnusedLocals": false
+  },
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}
