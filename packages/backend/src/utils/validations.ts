@@ -8,5 +8,5 @@ export const nameValidation = (value: string): boolean => {
 };
 
 export const ageValidation = (value: number): boolean => {
-  return typeof value === "number";
+  return !isNaN(value);
 };

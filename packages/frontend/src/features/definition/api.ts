@@ -3,7 +3,8 @@ import axios from "axios";
 
 export interface Definition {
   documents: Record<string, any>[];
-  layout: Record<string, any>;
+  rowsA: Record<string, any>[];
+  rowsB: Record<string, any>[];
 }
 
 const instance = axios.create({
@@ -16,7 +17,7 @@ export const fetchData = async (): Promise<Definition> => {
   return response?.data;
 };
 
-export const saveDocument = async (doc: { name: string; age: string }) => {
+export const saveDocument = async (doc: any) => {
   const response = await instance.post("/save-document", doc);
   return response?.data;
 };

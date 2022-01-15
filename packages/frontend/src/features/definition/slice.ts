@@ -6,7 +6,8 @@ export interface DefinitionState extends Definition {}
 
 const initialState: DefinitionState = {
   documents: [],
-  layout: {},
+  rowsA: [],
+  rowsB: [],
 };
 
 export const definitionSlice = createSlice({
@@ -15,7 +16,8 @@ export const definitionSlice = createSlice({
   reducers: {
     setDefinition: (state, action: PayloadAction<DefinitionState>) => {
       state.documents = action.payload.documents;
-      state.layout = action.payload.layout;
+      state.rowsA = action.payload.rowsA;
+      state.rowsB = action.payload.rowsB;
     },
   },
 });
